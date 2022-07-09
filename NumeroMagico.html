@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Número Mágico</title>
+    <link rel="stylesheet" type="text/css" href="./NumeroMagico.css" />
+</head>
+<body>
+  
+   <div id= 'divJogos'><h1>Jogo Número Mágico! </h1>
+    <pre> Advinhe um número que o sistema gerar aleatoriamente!
+    Escolha a dificuldade do jogo:</pre>
+<button onclick="facilMagico()" id="botaoMagicoFacil">Fácil</button>
+<button onclick="medioMagico()"id="botaoMagicoMedio">Médio</button>
+<button onclick="dificilMagico()"id="botaoMagicoDificil">Díficil</button>
+</div>
+    
+<div id="divMagicoModoFacil">
+    <h2>Regras:</h2>
+    <li>Quantidade de tentativas: 3</li>
+    <li>Número sorteado de 0 à 10</li>
+    <li>Clique no botão "Advinhar" para começar!</li>
+    <li>Clique no botão "Tente de Novo" se acabar suas chances</li>
+<pre><b>Boa sorte!</b></pre>
+
+Número: <input type="number" id="inpNumeroMagicoFacil">
+
+<button onclick="tenteMagicoFacil()" id="botaoMagicoFacil">Advinhar</button><hr>
+<button onclick="tenteDeNovoMagicoFacil()" id="botaoTenteDeNovoMagicoFacil">Tente de Novo</button>
+</div>
+
+<div id ='divMagicoModoMedio'>
+    <h2>Regras:</h2>
+    <li>Quantidade de tentativas: 5</li>
+    <li>Número sorteado de 0 à 50</li>
+    <li>Clique no botão "Advinhar" para começar!</li>
+    <li>Clique no botão "Tente de Novo" se acabar suas chances</li>
+<pre><b>Boa sorte!</b></pre>
+
+Número: <input type="number" id="inpNumeroMagicoMedio">
+
+<button onclick="tenteMagicoMedio()" id="botaoMagicoMedio">Advinhar</button><hr>
+<button onclick="tenteDeNovoMagicoMedio()" id="botaoTenteDeNovoMagicoMedio">Tente de Novo</button>
+</div>
+
+<div id="divMagicoModoDificil">
+    <h2>Regras:</h2>
+    <li>Quantidade de tentativas: 10</li>
+    <li>Número sorteado de 0 à 100</li>
+    <li>Clique no botão "Advinhar" para começar!</li>
+    <li>Clique no botão "Tente de Novo" se acabar suas chances</li>
+<pre><b>Boa sorte!</b></pre>
+
+Número: <input type="number" id="inpNumeroMagicoDificil">
+
+<button onclick="tenteMagicoDificil()" id="botaoMagicoDificil">Advinhar</button><hr>
+<button onclick="tenteDeNovoMagicoDificil()" id="botaoTenteDeNovoMagicoDificil">Tente de Novo</button>
+</div>
+
+<div id="divVoltar">
+    <button onclick="Volte()" id="botaoVolte">Mudar modo</button>
+</div><hr>
+
+<div id="divPainel"> Resposta </div><hr>
+
+</body>
+
+<script src="./NumeroMagico.js"></script>
+
+</html>

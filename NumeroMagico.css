@@ -1,0 +1,35 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+pre {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 17px;
+}
+
+
+#divPainel {
+    font-size: large ;
+}
+
+input {
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+button{
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    border-color: black;
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+hr{
+   visibility: hidden; 
+}
+
