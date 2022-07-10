@@ -82,14 +82,12 @@ function tenteMagicoMedio(){
      if (tentativasMagicoMedio >= 6){
         document.getElementById("inpNumeroMagicoMedio").value = ''
         document.getElementById('divPainel').innerHTML = 'Acabou as chances do nível Médio, o número era: ' + sorteio  
-        document.getElementById('divPontuação').innerHTML = 'Sua pontuação é: 0 pontos' 
 }
 }
 
 function tenteDeNovoMagicoMedio(){
-    contador = 0
     sorteio = Math.round(Math.random() * 50)
-    tentativasmagicoMedio = 1
+    tentativasMagicoMedio = 1
     document.getElementById('divPainel').innerHTML = 'Pode começar, outro número foi gerado!'
     document.getElementById("inpNumeroMagicoMedio").focus()
     document.getElementById("inpNumeroMagicoMedio").value = ''
@@ -104,7 +102,6 @@ function dificilMagico() {
     document.getElementById("divJogos").style.display = 'none'
     document.getElementById("inpNumeroMagicoDificil").focus()
 
- 
     sorteio = Math.round(Math.random() * 100)
 }
 
@@ -133,7 +130,6 @@ function tenteMagicoDificil(){
 }
 
 function tenteDeNovoMagicoDificil(){
-    contador = 0
     sorteio = Math.round(Math.random() * 100)
     tentativasMagicoDificil = 1
     document.getElementById('divPainel').innerHTML = 'Pode começar, outro número foi gerado!'
